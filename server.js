@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser')
 require('dotenv').config()
 const app = express();
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
