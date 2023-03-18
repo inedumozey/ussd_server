@@ -6,7 +6,11 @@ const schema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        password: {
+        phoneNumber: {
+            type: String,
+            trim: true,
+        },
+        pin: {
             type: String,
             trim: true,
         },
