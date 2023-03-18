@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const schema = new mongoose.Schema(
     {
-        account: {
+        accountNumber: {
             type: String,
             trim: true,
         },
@@ -10,7 +10,7 @@ const schema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        amount: {
+        balance: {
             type: Number,
             trim: true,
             default: 0,
