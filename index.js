@@ -46,6 +46,10 @@ app.use(cors(corsOptions))
 require('./src/auth/model')
 
 // routes
+app.get('*', (req, res) => {
+    res.send(`Dial *384*16009# on your moble phone to continue`)
+})
+
 app.use(require("./src/auth/route"));
 
 // normalize port
